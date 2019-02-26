@@ -1,0 +1,33 @@
+<acceptance-test-run title="Succes Login" name="Succes Login" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="891" timestamp="2019-02-25T14:09:37.557+02:00">
+  <user-story id="login-into-app" name="Login into app" path="Login/loginScenarios.feature"/>
+  <tags>
+    <tag name="Login" type="epic"/>
+    <tag name="Login/Login into app" type="feature"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="Succes Data" description=""/>
+    </datasets>
+    <headers>
+      <header>userName</header>
+      <header>password</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>serenitytraining</value>
+        <value>Password01</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {userName=serenitytraining, password=Password01}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="306">
+      <description>Given I use Valid &quot;serenitytraining&quot; and &quot;Password01&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>When I perform login Action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I should see my account mails.</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
